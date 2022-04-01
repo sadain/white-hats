@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cybot</title>
+    <title>Cybot</title>
     <link rel="shortcut icon" href="/cybot/img/white-hat-si-logo.png">
     <link rel="stylesheet" href="/cybot/main-style.css">
     <!-- Boxicons cdn -->
@@ -16,38 +16,38 @@
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
-                <img src="/img/white-hat-si-logo.png" alt="white-hat-si-logo" >
+                <img src="/cybot/img/white-hat-si-logo.png" alt="white-hat-si-logo" >
                 <div class="logo-name">White hats</div>
             </div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
         <ul class="nav_list">
             <li>
-                <a href="/"><i class='bx bx-grid-alt'></i>
+                <a href=""><i class='bx bx-grid-alt'></i>
                 <span class="link_name">Dashboard</span>
                 </a>
                 <span class="tooltip">Dashboard</span>
             </li>
             <li>
-                <a href="/"><i class='bx bx-wifi'></i></i>
+                <a href=""><i class='bx bx-wifi'></i></i>
                 <span class="link_name">Wifi IDS</span>
                 </a>
                 <span class="tooltip">Wifi IDS</span>
             </li>
             <li>
-                <a href="/"><i class='bx bx-signal-5'></i>
+                <a href=""><i class='bx bx-signal-5'></i>
                 <span class="link_name">Network IDS</span>
                 </a>
                 <span class="tooltip">Network IDS</span>
             </li>
             <li>
-                <a href="/"><i class='bx bx-terminal'></i>
+                <a href=""><i class='bx bx-terminal'></i>
                 <span class="link_name">Remote Command</span>
                 </a>
                 <span class="tooltip">Remote Cmd</span>
             </li>
             <li>
-                <a href="/"><i class='bx bx-meteor'></i>
+                <a href=""><i class='bx bx-meteor'></i>
                 <span class="link_name">Firewall</span>
                 </a>
                 <span class="tooltip">Firewall</span>
@@ -83,9 +83,29 @@
                 <span class="tooltip">Attaker Into Jail</span>
             </li>
         </ul>
-        
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="/cybot/img/profile-img.jpg" alt="profile">
+                    <div class="name_job">
+                        <div class="name">Sadain Abdullah</div>
+                        <div class="job">Web desiner</div>
+                    </div>
+                </div>
+                <i class="bx bx-log-out" id="log_out"></i>
+            </div>
+        </div>
     </div>
+    <div class="home_content">
+        <div class="text"> Home Content Dashboard</div>
+    </div>
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
 
-
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

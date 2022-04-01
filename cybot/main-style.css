@@ -144,3 +144,62 @@ body{
     background: #1d1b31;
 }
 
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.sidebar.active .profile .profile_details{
+    opacity: 1;
+    pointer-events: auto;
+}
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.profile .profile_details .name_job{
+    margin-left: 10px;
+}
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile .profile_details .job{
+    font-size: 12px;
+}
+.profile #log_out{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+.sidebar.active .profile #log_out{
+    left: 88%;
+}
+.home_content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% -78px);
+    left: 78px;
+    transition: all 0.5s ease;
+}
+.home_content .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #1d1b31;
+    margin: 12px;
+}
+.sidebar.active ~ .home_content{
+    width: calc(100% - 240px);
+    left: 240px;
+    
+}
