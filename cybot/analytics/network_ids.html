@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybot</title>
-    <link rel="shortcut icon" href="/cybot/img/white-hat-si-logo.png">
-    <link rel="stylesheet" href="/cybot/main-style.css">
+    <link rel="shortcut icon" href="/cybot/analytics/img/white-hat-si-logo.png">
+    <link rel="stylesheet" href="/cybot/analytics/main-style.css">
     <!-- Boxicons cdn -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <script src=""></script>
 </head>
-
 <body>
     <div class="sidebar">
         <div class="logo_content">
             <div class="logo">
-                <img src="/cybot/img/white-hat-si-logo.png" alt="white-hat-si-logo">
+                <img src="/cybot/analytics/img/white-hat-si-logo.png" alt="white-hat-si-logo" >
                 <div class="logo-name">White hats</div>
             </div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
         <ul class="nav_list">
             <li>
-                <a href="/cybot/analytics.html"><i class='bx bx-grid-alt'></i>
-                    <span class="link_name">Dashboard</span>
+                <a href="/cybot/analytics/analytics.html"><i class='bx bx-grid-alt'></i>
+                <span class="link_name">Dashboard</span>
                 </a>
                 <span class="tooltip">Dashboard</span>
             </li>
             <li>
-                <a href="/cybot/wifi-ids.html"><i class='bx bx-wifi'></i></i>
-                    <span class="link_name">Wifi IDS</span>
+                <a href="/cybot/analytics/wifi-ids.html"><i class='bx bx-wifi'></i></i>
+                <span class="link_name">Wifi IDS</span>
                 </a>
                 <span class="tooltip">Wifi IDS</span>
             </li>
             <li>
-                <a href="/cybot/network_ids.html"><i class='bx bx-signal-5'></i>
-                    <span class="link_name">Network IDS</span>
+                <a href="/cybot/analytics/network_ids.html"><i class='bx bx-signal-5'></i>
+                <span class="link_name">Network IDS</span>
                 </a>
                 <span class="tooltip">Network IDS</span>
             </li>
             <li>
                 <a href=""><i class='bx bx-terminal'></i>
-                    <span class="link_name">Remote Command</span>
+                <span class="link_name">Remote Command</span>
                 </a>
                 <span class="tooltip">Remote Cmd</span>
             </li>
             <li>
                 <a href=""><i class='bx bx-meteor'></i>
-                    <span class="link_name">Firewall</span>
+                <span class="link_name">Firewall</span>
                 </a>
                 <span class="tooltip">Firewall</span>
             </li>
             <li>
                 <a href=""><i class='bx bx-analyse'></i>
-                    <span class="link_name">Behavior Detection</span>
+                <span class="link_name">Behavior Detection</span>
                 </a>
                 <span class="tooltip">Behavior Detect</span>
             </li>
             <li>
                 <a href=""><i class='bx bx-alarm-exclamation'></i>
-                    <span class="link_name">Alarm System</span>
+                <span class="link_name">Alarm System</span>
                 </a>
                 <span class="tooltip">Alarm System</span>
             </li>
             <li>
                 <a href=""><i class='bx bxs-traffic'></i>
-                    <span class="link_name">Trafic Analysis</span>
+                <span class="link_name">Trafic Analysis</span>
                 </a>
                 <span class="tooltip">Trafic Analysis</span>
             </li>
             <li>
                 <a href=""><i class='bx bx-package'></i>
-                    <span class="link_name">Packet Inspection</span>
+                <span class="link_name">Packet Inspection</span>
                 </a>
                 <span class="tooltip">Packet Inspect</span>
             </li>
             <li>
                 <a href=""><i class='bx bx-user-x'></i>
-                    <span class="link_name">Attaker Into Jail</span>
+                <span class="link_name">Attaker Into Jail</span>
                 </a>
                 <span class="tooltip">Attaker Into Jail</span>
             </li>
@@ -99,19 +97,16 @@
         </div>
     </div>
     <div class="home_content">
-        <div class="text">Wifi Intrusion Detection System</div>
-        <!-- <iframe src="http://172.16.8.131:5000/ids.py" frameborder="0" width="1250" height="100%"></iframe> -->
-        <iframe src="https://00d3-157-51-77-171.ngrok.io/ids.py" frameborder="0" width="1250" height="100%"></iframe>
-    </div>
+        <div class="text">Network Intrusion Detection System</div>
+        <iframe src="http://172.16.8.131:5000/ids.py" frameborder="0" width="1200" height="1000vh"></iframe>
     </div>
     <script>
         let btn = document.querySelector("#btn");
         let sidebar = document.querySelector(".sidebar");
 
-        btn.onclick = function () {
+        btn.onclick = function() {
             sidebar.classList.toggle("active");
         }
     </script>
 </body>
-
 </html>

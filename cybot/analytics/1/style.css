@@ -7,6 +7,7 @@
 .input {
     transition: border 0.2s ease-in-out;
     min-width: 280px;
+    color: black;
 }
 
 .input:focus+.label,
@@ -32,3 +33,4 @@
     left: 0;
     
 }
+
