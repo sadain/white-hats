@@ -1,0 +1,15 @@
+.flex {
+    padding-bottom: 32px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/assets/images/bot-enterprise-gif.gif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fetures li{
+    padding: 4px;
+    list-style: none;
+}
