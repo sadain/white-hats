@@ -4,7 +4,7 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/cybot/assets/images/bot-enterprise-gif.gif);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../cybot/assets/images/bot-enterprise-gif.gif);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
